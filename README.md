@@ -2,7 +2,7 @@
 
 A Retrieval-Augmented Generation (RAG) application that enables intelligent Q&A interactions with PDF documents using local embeddings and Groq's LLM API. Extract insights from your PDFs through a conversational interface powered by state-of-the-art NLP models.
 
-[Demo](images/demo.png)
+![Demo](images/demo.png)
 
 ## 📋 Table of Contents
 
