@@ -1,7 +1,7 @@
 import os
 from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class DataLoader:
     def __init__(self, model_name='all-MiniLM-L6-v2'):
