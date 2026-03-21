@@ -2,6 +2,8 @@
 
 A Retrieval-Augmented Generation (RAG) application that enables intelligent Q&A interactions with PDF documents using local embeddings and Groq's LLM API. Extract insights from your PDFs through a conversational interface powered by state-of-the-art NLP models.
 
+Live App - https://abhi-pdf-rag-chatbot.streamlit.app/
+
 ![Demo](images/demo.png)
 
 ## 📋 Table of Contents
