@@ -1,0 +1,26 @@
+# PDF RAG Chatbot - Requirements
+# Python 3.8+
+
+# Web Framework
+streamlit>=1.28.0
+
+# PDF Processing
+pypdf>=4.0.0
+
+# Embeddings & NLP
+sentence-transformers>=2.2.2
+torch>=2.0.0
+
+# Vector Database
+chromadb>=0.4.0
+
+# Text Processing
+langchain>=0.1.0
+langchain-core>=0.1.0
+
+# LLM Integration
+groq>=0.4.0
+
+# Additional Dependencies
+numpy>=1.24.0
+tqdm>=4.65.0
