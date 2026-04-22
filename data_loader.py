@@ -47,13 +47,20 @@ class DataLoader:
         """
         Splits text into smaller chunks for processing.
         Returns an empty list if no text is provided.
+        Includes a fallback to ensure at least one chunk is returned if text exists.
         """
-        if not text:
+        if not text or not text.strip():
             return []
         
         chunks = self.text_splitter.split_text(text)
+        
+        # Fallback: If splitter produces no chunks but text exists, return text as one chunk
+        if not chunks and text.strip():
+            chunks = [text.strip()]
+            
         print(f"Split into {len(chunks)} chunks.")
         return chunks
+
 
 
 

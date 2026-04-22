@@ -66,7 +66,11 @@ if uploaded_file is not None:
                         st.error("Could not extract any text from this PDF. It might be a scanned image (OCR required) or encrypted.")
                         st.stop()
                     
-                    st.write(f"Extracted {len(text)} characters.")
+                    char_count = len(text)
+                    st.write(f"Extracted {char_count} characters.")
+                    
+                    if char_count < 1000:
+                        st.warning("⚠️ Very little text was found. This PDF might be a scanned image or requires OCR to read correctly.")
 
 
                     chunks = loader.split_text(text)

@@ -20,6 +20,6 @@ langchain-text-splitters>=0.2.0
 # LLM Integration
 groq>=0.4.0
 
-# Additional Dependencies
-numpy>=1.24.0
-tqdm>=4.65.0
+# Version Compatibility Fixes
+protobuf<5.0.0
+
